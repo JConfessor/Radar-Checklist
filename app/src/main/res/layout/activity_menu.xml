@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MenuActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="278dp"
+        android:layout_height="187dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="71dp"
+        app:srcCompat="@drawable/whatsapp_image_2021_08_10_at_12_05_28_removebg_preview__2_" />
+
+    <TextView
+        android:id="@+id/textViewUsuario"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="120dp"
+        android:text="Bem-vindo, Usuário"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="205dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="37dp"
+        android:backgroundTint="#FF6600"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#000000"
+        tools:text="Logout" />
+
+    <Button
+        android:id="@+id/btnNovoChecklist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="266dp"
+        android:layout_marginEnd="97dp"
+        android:backgroundTint="#FF6600"
+        android:text="Novo Checklist"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnListarVeiculos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnNovoChecklist"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="#FF6600"
+        android:text="Listar Veículos"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnListarColaboradores"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnListarVeiculos"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="#FF6600"
+        android:text="Listar Colaboradores"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<!-- item_checklist.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp">
+
+    <TextView
+        android:id="@+id/textViewItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="2dp"
+        android:background="#232323"
+        android:text="Nome do Item"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewItemName"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonConforme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conforme"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000"
+            android:textColorLink="#000000"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButtonNaoConforme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não Conforme"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButtonNaoAplicavel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não Aplicável"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+    </RadioGroup>
+</RelativeLayout>

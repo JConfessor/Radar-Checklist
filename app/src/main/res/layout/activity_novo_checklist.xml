@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".NovoChecklistActivity">
+
+    <!-- Parte Superior -->
+
+    <!-- Parte do RecyclerView -->
+
+    <!-- Botão Voltar -->
+    <LinearLayout
+        android:id="@+id/layoutSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="54dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewColaborador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Colaborador:"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/editTextColaborador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o nome do colaborador"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <TextView
+            android:id="@+id/textViewMatricula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Matrícula:"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/editTextMatricula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite a matrícula"
+            android:inputType="number"
+            android:textColorHint="#000000" />
+
+        <TextView
+            android:id="@+id/textViewFrota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Frota:"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <Spinner
+            android:id="@+id/spinnerFrota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewFrota"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#000000"
+            android:foregroundTint="@color/black"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textViewTipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo:"
+            android:textColor="#000000" />
+
+        <Spinner
+            android:id="@+id/spinnerTipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:entries="@array/tipo_array"
+            style="@style/Widget.AppCompat.Spinner"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewChecklist"
+        android:layout_width="390dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/layoutSuperior"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="99dp" />
+
+    <!-- Botão Voltar -->
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="315dp"
+        android:backgroundTint="#FF6600"
+        android:text="Voltar"
+        android:textColor="#FFFFFF" />
+
+    <!-- Botão Continuar -->
+    <Button
+        android:id="@+id/btnFinalizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FF6600"
+        android:text="Finalizar"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

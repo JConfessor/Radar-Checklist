@@ -1,0 +1,74 @@
+<!-- item_veiculo.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#272727"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewFrota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Frota:"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/frota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewFrota"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@+id/textViewFrota"
+        android:text=""
+        android:textColor="#DF6500"
+        android:textColorHint="#DF6500" />
+
+    <TextView
+        android:id="@+id/textViewPlaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewFrota"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp"
+        android:text="Placa:"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/placa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewPlaca"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@+id/textViewPlaca"
+        android:text=""
+        android:textColor="#DF6500"
+        android:textColorHint="#DF6500" />
+
+    <TextView
+        android:id="@+id/textViewModelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewPlaca"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp"
+        android:text="Modelo:"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/modelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewModelo"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@+id/textViewModelo"
+        android:text=""
+        android:textColor="#DF6500"
+        android:textColorHint="#DF6500" />
+</RelativeLayout>

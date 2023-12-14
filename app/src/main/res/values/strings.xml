@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CheckList</string>
+    <string-array name="tipo_array">
+        <item>Entrega</item>
+        <item>Recebimento</item>
+    </string-array>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Documento CRLV"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxConforme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conforme"
+        android:layout_below="@id/textViewItem"
+        android:layout_marginTop="8dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxNaoConforme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Não Conforme"
+        android:layout_below="@id/checkBoxConforme"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnProximaEtapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxNaoConforme"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FF6600"
+        android:text="Próxima Etapa"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
